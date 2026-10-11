@@ -1,0 +1,27 @@
+{
+  "name": "Custom Profile",
+  "version": 1,
+  "weights": {
+    "strong_phrase": 5.0,
+    "supporting_phrase": 2.0,
+    "decision_intent": 1.5,
+    "personal_context": 1.0,
+    "noise_penalty": 3.0
+  },
+  "thresholds": {
+    "relevant": 5.5,
+    "needs_review": 3.0
+  },
+  "decision_intent_phrases": ["should i", "help", "review", "vs"],
+  "personal_context_phrases": ["my", "our"],
+  "noise_phrases": [],
+  "hard_exclusion_phrases": [],
+  "review_triggers": [],
+  "categories": [
+    {
+      "name": "Example Topic",
+      "strong_phrases": ["high precision phrase"],
+      "supporting_phrases": ["supporting term"]
+    }
+  ]
+}

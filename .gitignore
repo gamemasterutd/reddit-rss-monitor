@@ -1,0 +1,33 @@
+# Private runtime, collected data and generated reports
+.runtime/
+output/
+*.sqlite3
+*.sqlite3-*
+*.db
+*.log
+*.xlsx
+*.csv
+*.jsonl
+config.json
+.env
+.env.*
+*.conf
+*client*.json
+*token*.json
+*.pem
+*.key
+*api_key*.txt
+
+# Personal work setup and account-specific notes
+WORK_*.md
+HANDOFF*.md
+9_CONNECT_WORK_DRIVE_FOLDERS.command
+
+# Python and editor files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,393 @@
+{
+  "name": "India Personal Finance Research",
+  "version": 3,
+  "weights": {
+    "strong_phrase": 5.0,
+    "supporting_phrase": 2.0,
+    "decision_intent": 1.5,
+    "personal_context": 1.0,
+    "noise_penalty": 3.0
+  },
+  "thresholds": {
+    "relevant": 5.5,
+    "needs_review": 3.0
+  },
+  "decision_intent_phrases": [
+    "should i",
+    "what should i do",
+    "switch",
+    "review",
+    "prepay",
+    "invest or",
+    "vs",
+    "worth it",
+    "help",
+    "confused",
+    "which is better",
+    "what do you think",
+    "advice",
+    "suggest",
+    "recommend",
+    "continue or",
+    "keep or",
+    "sell or",
+    "buy or",
+    "suggestions",
+    "how to start",
+    "how do i start"
+  ],
+  "personal_context_phrases": [
+    "my portfolio",
+    "my salary",
+    "my family",
+    "my parents",
+    "my child",
+    "my children",
+    "my wife",
+    "my husband",
+    "i am",
+    "i have",
+    "we have",
+    "our finances",
+    "my goal",
+    "my goals",
+    "my income",
+    "my emi",
+    "my loan",
+    "my investments"
+  ],
+  "noise_phrases": [
+    "kyc processing",
+    "kyc pending",
+    "account activation",
+    "application status",
+    "card delivery",
+    "payment failure",
+    "upi issue",
+    "upi failed",
+    "customer care",
+    "customer service",
+    "app not working",
+    "login issue",
+    "mandate failed",
+    "mandate pending",
+    "transaction pending",
+    "order pending",
+    "online personal loan application",
+    "loan application status",
+    "rrf form",
+    "bank account features"
+  ],
+  "hard_exclusion_phrases": [
+    "referral code",
+    "affiliate link",
+    "use my code",
+    "promo code",
+    "promotion only",
+    "pump and dump",
+    "target price",
+    "intraday call",
+    "f&o signal",
+    "fo signal",
+    "which stock will double",
+    "guaranteed return",
+    "dm for tips",
+    "telegram channel",
+    "whatsapp group"
+  ],
+  "review_triggers": [
+    {
+      "name": "sensitive",
+      "reason": "Sensitive personal situation",
+      "phrases": [
+        "job loss",
+        "lost my job",
+        "laid off",
+        "layoff",
+        "medical emergency",
+        "divorce",
+        "inheritance dispute",
+        "debt crisis",
+        "unable to pay emi",
+        "financial abuse",
+        "serious illness",
+        "death in family"
+      ]
+    },
+    {
+      "name": "tax_regulatory",
+      "reason": "Current tax or regulatory question",
+      "requires_decision_intent": true,
+      "phrases": [
+        "income tax",
+        "capital gains tax",
+        "tax residency",
+        "schedule fa",
+        "itr-2",
+        "itr 2",
+        "tcs",
+        "lrs",
+        "foreign asset reporting",
+        "sebi rule",
+        "rbi rule",
+        "tax filing",
+        "tax notice"
+      ]
+    },
+    {
+      "name": "legal_fraud",
+      "reason": "Legal allegation or serious fraud claim",
+      "phrases": [
+        "fraud",
+        "scam",
+        "legal notice",
+        "police complaint",
+        "cheated by",
+        "misappropriation"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "Mutual Funds",
+      "strong_phrases": [
+        "mutual fund",
+        "fund portfolio",
+        "fund overlap",
+        "direct vs regular",
+        "expense ratio",
+        "fund manager",
+        "underperformance",
+        "underperforming fund",
+        "switching funds",
+        "category performance",
+        "portfolio review",
+        "liquid fund",
+        "starting sip",
+        "sbi mf",
+        "liquid funds"
+      ],
+      "supporting_phrases": [
+        "sip",
+        "regular plan",
+        "direct plan",
+        "small cap fund",
+        "mid cap fund",
+        "large cap fund",
+        "flexi cap",
+        "index fund",
+        "fund allocation",
+        "xirr",
+        "mf"
+      ]
+    },
+    {
+      "name": "Financial Planning",
+      "strong_phrases": [
+        "financial planning",
+        "financial planner",
+        "investment adviser",
+        "investment advisor",
+        "asset allocation",
+        "goal planning",
+        "household finances",
+        "financial goals",
+        "emergency fund",
+        "sitting in a savings account",
+        "money in savings account"
+      ],
+      "supporting_phrases": [
+        "ria",
+        "risk profile",
+        "goal based",
+        "goal-based",
+        "money plan",
+        "cash flow",
+        "net worth",
+        "financial independence",
+        "savings account"
+      ]
+    },
+    {
+      "name": "Retirement / FIRE",
+      "strong_phrases": [
+        "retirement",
+        "fire",
+        "retirement corpus",
+        "retirement planning",
+        "withdrawal strategy",
+        "pension",
+        "nps",
+        "epf",
+        "ppf"
+      ],
+      "supporting_phrases": [
+        "safe withdrawal rate",
+        "swr",
+        "corpus",
+        "retire early",
+        "coast fire",
+        "lean fire",
+        "fat fire"
+      ]
+    },
+    {
+      "name": "Insurance / Protection",
+      "strong_phrases": [
+        "health insurance",
+        "term insurance",
+        "medical corpus",
+        "employer insurance",
+        "underinsurance",
+        "ulip",
+        "endowment"
+      ],
+      "supporting_phrases": [
+        "sum insured",
+        "insurance cover",
+        "medical insurance",
+        "super top up",
+        "top-up cover",
+        "life cover",
+        "premium"
+      ]
+    },
+    {
+      "name": "Debt / Housing",
+      "strong_phrases": [
+        "home loan",
+        "education loan",
+        "debt repayment",
+        "invest vs repay",
+        "rent vs buy",
+        "home affordability",
+        "loan prepayment",
+        "rent to income",
+        "rent affordability",
+        "moving out",
+        "personal loan",
+        "second home",
+        "build a house",
+        "build a home"
+      ],
+      "supporting_phrases": [
+        "emi",
+        "prepayment",
+        "prepay loan",
+        "loan tenure",
+        "mortgage",
+        "interest rate",
+        "down payment",
+        "monthly rent",
+        "housing costs"
+      ]
+    },
+    {
+      "name": "Investment Behaviour",
+      "strong_phrases": [
+        "panic selling",
+        "market timing",
+        "portfolio drift",
+        "asset concentration",
+        "diversification",
+        "rebalancing",
+        "rebalance"
+      ],
+      "supporting_phrases": [
+        "fomo",
+        "concentration",
+        "fear and greed",
+        "buy the dip",
+        "timing the market",
+        "over diversified",
+        "over-diversified"
+      ]
+    },
+    {
+      "name": "Mis-selling / Advice",
+      "strong_phrases": [
+        "mis-selling",
+        "misselling",
+        "advisor conflict",
+        "fee-only",
+        "commission based",
+        "commission-led",
+        "regular plan",
+        "distributor"
+      ],
+      "supporting_phrases": [
+        "commission",
+        "ria",
+        "trail commission",
+        "product push",
+        "bank rm",
+        "relationship manager"
+      ]
+    },
+    {
+      "name": "NRI / Global / Cross-border",
+      "strong_phrases": [
+        "nri",
+        "rnor",
+        "lrs",
+        "schedule fa",
+        "foreign assets",
+        "rsu",
+        "esop",
+        "international investing",
+        "usd goals",
+        "relocation",
+        "return to india",
+        "tax residency",
+        "foreign brokerage",
+        "inward remittance"
+      ],
+      "supporting_phrases": [
+        "foreign etf",
+        "global investing",
+        "us stocks",
+        "overseas investing",
+        "foreign income",
+        "withholding tax",
+        "estate tax",
+        "remittance"
+      ]
+    },
+    {
+      "name": "Life / Money Context",
+      "strong_phrases": [
+        "layoffs",
+        "layoff",
+        "job loss",
+        "income instability",
+        "career break",
+        "supporting parents",
+        "children's education",
+        "childrens education",
+        "lifestyle inflation",
+        "property concentration",
+        "family financial responsibility",
+        "variable income",
+        "irregular income",
+        "freelance income",
+        "first job",
+        "first salary",
+        "cost of living"
+      ],
+      "supporting_phrases": [
+        "salary cut",
+        "dependent parents",
+        "school fees",
+        "college fees",
+        "marriage expenses",
+        "single income",
+        "career change",
+        "freelancer",
+        "self employed",
+        "solopreneur",
+        "project basis",
+        "living alone"
+      ]
+    }
+  ]
+}

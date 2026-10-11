@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>sample</title>
+  <entry>
+    <id>t3_abc123</id>
+    <title>Should I switch my mutual fund?</title>
+    <published>2026-09-18T03:00:00+00:00</published>
+    <updated>2026-09-18T03:00:00+00:00</updated>
+    <link href="https://www.reddit.com/r/Test/comments/abc123/sample_title/?utm_source=rss" />
+    <content type="html">&lt;p&gt;My portfolio has a high expense ratio &amp;amp; I am confused.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>t3_def456</id>
+    <title>Emergency fund question</title>
+    <published>2026-09-17T21:00:00Z</published>
+    <link href="https://old.reddit.com/r/Test/comments/def456/emergency_fund/" />
+    <content type="html">&lt;p&gt;How much emergency fund should I keep?&lt;/p&gt;</content>
+  </entry>
+</feed>
