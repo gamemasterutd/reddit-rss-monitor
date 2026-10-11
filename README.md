@@ -1,5 +1,8 @@
 # Reddit RSS Monitor
 
+[![Local validation](https://github.com/gamemasterutd/reddit-rss-monitor/actions/workflows/tests.yml/badge.svg)](https://github.com/gamemasterutd/reddit-rss-monitor/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Turn subreddit feeds into one monthly research workbook.
 
 A local Python tool for discovering posts, applying your own relevance rules, collecting bounded comment samples, and preparing source material for human or LLM review. The collector uses Python's standard library, SQLite, and a built-in XLSX writer. macOS scheduling and Google Drive upload are optional.
@@ -98,6 +101,8 @@ bash scripts/validate_release.sh
 Tests use synthetic fixtures, mocks and a local HTTP server. They do not contact Reddit or install a real scheduler. GitHub Actions runs local validation only; it is not a cloud scraper schedule.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), [ARCHITECTURE.md](ARCHITECTURE.md) and [SECURITY.md](SECURITY.md). Useful contributions include a supported source connector, clearer collection status and a persistent first-comment queue. Discuss a connector's access and coverage before implementing it.
+
+See [VALIDATION.md](VALIDATION.md) for the public preview's verification and limitations, or join [Discussions](https://github.com/gamemasterutd/reddit-rss-monitor/discussions) with a workflow or example you want to support.
 
 ## License
 
